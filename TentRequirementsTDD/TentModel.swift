@@ -28,6 +28,10 @@ class TentModel: NSObject {
         length = myLength
     }
     
+    func string() -> String {
+        return "20 X " + String(length)
+    }
+    
     func threeT() -> Int {
         return 6
     }

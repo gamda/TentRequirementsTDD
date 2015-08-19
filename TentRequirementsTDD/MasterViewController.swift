@@ -33,6 +33,11 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = controllers[controllers.count-1] as? DetailViewController
         }
+        
+        // Populate the first objects
+        for _ in 1...6 {
+            insertNewObject(self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,9 +46,15 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        objects.insert(NSDate(), atIndex: 0)
-        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        let count = objects.count
+        do {
+            let newTent = try TentModel(newLength: (count + 1) * 10)
+            objects.insert(newTent, atIndex: count)
+            let indexPath = NSIndexPath(forRow: count, inSection: 0)
+            self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        } catch {
+            print("Can't create tent")
+        }
     }
 
     // MARK: - Segues
@@ -73,8 +84,8 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.detailTextLabel!.text = object.description
+        let object = objects[indexPath.row] as! TentModel
+        cell.textLabel!.text = object.string()
         return cell
     }
 
