@@ -10,16 +10,22 @@ import Foundation
 
 
 class TentModel: NSObject {
-    let length : Int
+    var length : Int
     
-    /* For when I get Swift 2
-    enum TentInputError : ErrorType {
+    // For when I get Swift 2
+    enum TentError : ErrorType {
         case InputNotMultipleOfTen
     }
-    */
     
-    init(newLenght : Int) {
-        length = newLenght - (newLenght % 10) // to make sure it is a multiple of 10
+    init(newLength : Int?) throws {
+        length = 0
+        super.init()
+        // length = newLenght - (newLenght % 10) // to make sure it is a multiple of 10
+        guard let myLength = newLength
+            where (newLength! % 10) == 0 else {
+                throw TentError.InputNotMultipleOfTen
+        }
+        length = myLength
     }
     
     func threeT() -> Int {
@@ -34,8 +40,8 @@ class TentModel: NSObject {
         if ( length == 10 ) {
             return 6
         }
-        var straight = (length / 10) * 3
-        var across = ((length / 10) + 1) * 2
+        let straight = (length / 10) * 3
+        let across = ((length / 10) + 1) * 2
         return straight + across
     }
     
