@@ -28,7 +28,7 @@ class TentModel: NSObject {
         length = myLength
     }
     
-    func string() -> String {
+    override var description : String {
         return "20 X " + String(length)
     }
     
