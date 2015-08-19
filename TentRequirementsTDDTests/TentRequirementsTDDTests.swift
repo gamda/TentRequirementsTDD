@@ -9,6 +9,8 @@
 import UIKit
 import XCTest
 
+@testable import TentRequirementsTDD
+
 class TentRequirementsTDDTests: XCTestCase {
     
     override func setUp() {

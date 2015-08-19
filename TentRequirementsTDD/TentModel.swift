@@ -56,6 +56,10 @@ class TentModel: NSObject {
     func lamps() -> Int {
         return (length == 10) ? 1 : (length / 20)
     }
+    
+    func peopleThatFitInside() -> Int {
+        return length * 4
+    }
 }
 
 /*

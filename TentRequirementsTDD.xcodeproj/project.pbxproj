@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0AB146771B849123001BA540 /* TentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB146761B849123001BA540 /* TentModel.swift */; };
-		0AB146781B849668001BA540 /* TentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB146761B849123001BA540 /* TentModel.swift */; };
 		0AF2BCED1B83533B0054E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCEC1B83533B0054E8C0 /* AppDelegate.swift */; };
 		0AF2BCEF1B83533B0054E8C0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCEE1B83533B0054E8C0 /* MasterViewController.swift */; };
 		0AF2BCF11B83533B0054E8C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCF01B83533B0054E8C0 /* DetailViewController.swift */; };
@@ -236,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB146781B849668001BA540 /* TentModel.swift in Sources */,
 				0AF2BD051B83533B0054E8C0 /* TentRequirementsTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
