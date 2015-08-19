@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB146771B849123001BA540 /* TentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB146761B849123001BA540 /* TentModel.swift */; };
+		0AB146781B849668001BA540 /* TentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB146761B849123001BA540 /* TentModel.swift */; };
 		0AF2BCED1B83533B0054E8C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCEC1B83533B0054E8C0 /* AppDelegate.swift */; };
 		0AF2BCEF1B83533B0054E8C0 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCEE1B83533B0054E8C0 /* MasterViewController.swift */; };
 		0AF2BCF11B83533B0054E8C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BCF01B83533B0054E8C0 /* DetailViewController.swift */; };
@@ -14,6 +16,7 @@
 		0AF2BCF61B83533B0054E8C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2BCF51B83533B0054E8C0 /* Images.xcassets */; };
 		0AF2BCF91B83533B0054E8C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2BCF71B83533B0054E8C0 /* LaunchScreen.xib */; };
 		0AF2BD051B83533B0054E8C0 /* TentRequirementsTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BD041B83533B0054E8C0 /* TentRequirementsTDDTests.swift */; };
+		0AF2BD0F1B8377DE0054E8C0 /* CustomLeftDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2BD0E1B8377DE0054E8C0 /* CustomLeftDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB146761B849123001BA540 /* TentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TentModel.swift; sourceTree = "<group>"; };
 		0AF2BCE71B83533B0054E8C0 /* TentRequirementsTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TentRequirementsTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF2BCEB1B83533B0054E8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF2BCEC1B83533B0054E8C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 		0AF2BCFE1B83533B0054E8C0 /* TentRequirementsTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TentRequirementsTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF2BD031B83533B0054E8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF2BD041B83533B0054E8C0 /* TentRequirementsTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentRequirementsTDDTests.swift; sourceTree = "<group>"; };
+		0AF2BD0E1B8377DE0054E8C0 /* CustomLeftDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLeftDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				0AF2BCF21B83533B0054E8C0 /* Main.storyboard */,
 				0AF2BCF51B83533B0054E8C0 /* Images.xcassets */,
 				0AF2BCF71B83533B0054E8C0 /* LaunchScreen.xib */,
+				0AF2BD0E1B8377DE0054E8C0 /* CustomLeftDetailCell.swift */,
+				0AB146761B849123001BA540 /* TentModel.swift */,
 				0AF2BCEA1B83533B0054E8C0 /* Supporting Files */,
 			);
 			path = TentRequirementsTDD;
@@ -217,6 +224,8 @@
 			files = (
 				0AF2BCF11B83533B0054E8C0 /* DetailViewController.swift in Sources */,
 				0AF2BCEF1B83533B0054E8C0 /* MasterViewController.swift in Sources */,
+				0AF2BD0F1B8377DE0054E8C0 /* CustomLeftDetailCell.swift in Sources */,
+				0AB146771B849123001BA540 /* TentModel.swift in Sources */,
 				0AF2BCED1B83533B0054E8C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB146781B849668001BA540 /* TentModel.swift in Sources */,
 				0AF2BD051B83533B0054E8C0 /* TentRequirementsTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +425,7 @@
 				0AF2BD0A1B83533B0054E8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF2BD0B1B83533B0054E8C0 /* Build configuration list for PBXNativeTarget "TentRequirementsTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +434,7 @@
 				0AF2BD0D1B83533B0054E8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

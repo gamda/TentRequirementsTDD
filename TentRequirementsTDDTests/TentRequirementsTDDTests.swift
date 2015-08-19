@@ -21,16 +21,79 @@ class TentRequirementsTDDTests: XCTestCase {
         super.tearDown()
     }
     
+    func testLengthGretaerThanTenButLessThanTwenty() {
+        // This tent is not common size, the program should
+        //  round down to length 10
+        var myTentModel = TentModel(newLenght: 15)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 3, "4-T must be 3")
+        XCTAssert(myTentModel.tenFeet() == 6, "10ft must be 6")
+        XCTAssert(myTentModel.eightFeet() == 6, "8ft must be 6")
+        XCTAssert(myTentModel.sixFeet() == 6, "6ft must be 6")
+        XCTAssert(myTentModel.lamps() == 1, "Lamps must be 1")
+    }
+    
+    func testLenghtTen() {
+        var myTentModel = TentModel(newLenght: 10)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 3, "4-T must be 3")
+        XCTAssert(myTentModel.tenFeet() == 6, "10ft must be 6")
+        XCTAssert(myTentModel.eightFeet() == 6, "8ft must be 6")
+        XCTAssert(myTentModel.sixFeet() == 6, "6ft must be 6")
+        XCTAssert(myTentModel.lamps() == 1, "Lamps must be 1")
+    }
+    
+    func testLenghtTwenty() {
+        var myTentModel = TentModel(newLenght: 20)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 3, "4-T must be 3")
+        XCTAssert(myTentModel.tenFeet() == 12, "10ft must be 12")
+        XCTAssert(myTentModel.eightFeet() == 6, "8ft must be 6")
+        XCTAssert(myTentModel.sixFeet() == 0, "6ft must be 0")
+        XCTAssert(myTentModel.lamps() == 1, "Lamps must be 1")
+    }
+    
+    func testLenghtThirty() {
+        var myTentModel = TentModel(newLenght: 30)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 6, "4-T must be 6")
+        XCTAssert(myTentModel.tenFeet() == 17, "10ft must be 17")
+        XCTAssert(myTentModel.eightFeet() == 8, "8ft must be 8")
+        XCTAssert(myTentModel.sixFeet() == 0, "6ft must be 0")
+        XCTAssert(myTentModel.lamps() == 1, "Lamps must be 1")
+    }
+    
+    func testLenghtForty() {
+        var myTentModel = TentModel(newLenght: 40)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 9, "4-T must be 9")
+        XCTAssert(myTentModel.tenFeet() == 22, "10ft must be 22")
+        XCTAssert(myTentModel.eightFeet() == 10, "8ft must be 10")
+        XCTAssert(myTentModel.sixFeet() == 0, "6ft must be 0")
+        XCTAssert(myTentModel.lamps() == 2, "Lamps must be 2")
+    }
+    
+    func testLenghtFifty() {
+        var myTentModel = TentModel(newLenght: 50)
+        XCTAssert(myTentModel.threeT() == 6, "3-T must be 6")
+        XCTAssert(myTentModel.fourT() == 12, "4-T must be 12")
+        XCTAssert(myTentModel.tenFeet() == 27, "10ft must be 27")
+        XCTAssert(myTentModel.eightFeet() == 12, "8ft must be 12")
+        XCTAssert(myTentModel.sixFeet() == 0, "6ft must be 0")
+        XCTAssert(myTentModel.lamps() == 2, "Lamps must be 2")
+    }// bigger tents are very unlikely
+    
+    /*
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
     }
-    
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
             // Put the code you want to measure the time of here.
         }
     }
-    
+    */
 }
